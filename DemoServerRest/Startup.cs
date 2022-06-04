@@ -62,7 +62,7 @@ namespace DemoServerRest
             app.UseRouting();
 
             app.UseCors(options => options
-              .WithOrigins(new[] { "https://localhost:44395" })
+              .WithOrigins(new[] { "https://localhost:44395", "https://demo-client-rest.herokuapp.com/" })
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials()
